@@ -19,13 +19,13 @@ class NewsSource {
 
   factory NewsSource.fromJson(Map<String, dynamic> json) {
     return NewsSource(
-      id: json['id'],
-      name: json['name'],
-      description: json['description'],
-      url: json['url'],
-      category: json['category'],
-      language: json['language'],
-      country: json['country'],
+      id: json['id'] ?? 'N/A',
+      name: json['name'] ?? 'N/A',
+      description: json['description'] ?? 'N/A',
+      url: json['url'] ?? 'N/A',
+      category: json['category'] ?? 'N/A',
+      language: json['language'] ?? 'N/A',
+      country: json['country'] ?? 'N/A',
     );
   }
 }
